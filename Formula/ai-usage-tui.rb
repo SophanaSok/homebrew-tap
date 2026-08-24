@@ -4,30 +4,30 @@
 class AiUsageTui < Formula
   desc "A btop-inspired dashboard for local and hosted AI usage"
   homepage "https://github.com/SophanaSok/ai-usage-tui"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.6.0/ai-usage-tui-v0.6.0-aarch64-macos.tar.gz"
-      sha256 "fddc5a7cb72fda938e7da3e35db4fc0fe88f446e3771d84bbaff6ea66cb57df2"
+      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.7.0/ai-usage-tui-v0.7.0-aarch64-macos.tar.gz"
+      sha256 "360687df13e6da4b6b6aa335d80044d8aa2d6a34ed9cc60ce239cdfbc64a9edc"
     end
     on_intel do
-      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.6.0/ai-usage-tui-v0.6.0-x86_64-macos.tar.gz"
-      sha256 "170dd65b98b63b5791c1bebfdc5d95d478eadeb96f82b9e6318b21efae28ac15"
+      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.7.0/ai-usage-tui-v0.7.0-x86_64-macos.tar.gz"
+      sha256 "a4dbcedeeae53e74ad67b9ed162ffbdffe4dcd255c0d2184727a2a24f70d0044"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.6.0/ai-usage-tui-v0.6.0-x86_64-linux.tar.gz"
-      sha256 "482bed8dd7498379bc12dfb2befb7c603b69e7125293f6174c0fcad35d5a7198"
+      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.7.0/ai-usage-tui-v0.7.0-x86_64-linux.tar.gz"
+      sha256 "3a652e65edb871d5812e312665ff22623cadb263f8bb1376445074ebd27bb110"
     end
     # The aarch64-linux tarball has been built and published since v0.2.0; the formula simply
     # never offered it, so `brew install` on an ARM Linux box fell through to no bottle at all.
     on_arm do
-      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.6.0/ai-usage-tui-v0.6.0-aarch64-linux.tar.gz"
-      sha256 "0f252a443af2b8374c590f4dc7655ba8a801091f26bcfedcb43b6006cfbc8c5e"
+      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.7.0/ai-usage-tui-v0.7.0-aarch64-linux.tar.gz"
+      sha256 "25e3b5465acda48d1ed300aaa0beda00d0c3a126efa3bdb76a907f41c6de7deb"
     end
   end
 
