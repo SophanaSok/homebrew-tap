@@ -2,32 +2,32 @@
 # Do not hand-edit the version or checksums -- they drifted from the published artifact names
 # before (the tarball is tagged v0.2.0 but this file asked for 0.2.0) and every URL 404'd.
 class AiUsageTui < Formula
-  desc "A btop-inspired dashboard for local and hosted AI usage"
+  desc "A btop-inspired terminal dashboard for AI coding-agent token usage, cost and budgets — reads Claude Code, Codex CLI, Gemini CLI, OpenCode and Ollama, live TUI or JSON/CSV."
   homepage "https://github.com/SophanaSok/ai-usage-tui"
-  version "0.8.0"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.8.0/ai-usage-tui-v0.8.0-aarch64-macos.tar.gz"
-      sha256 "8c6e18fb351c208565a8f44b36f1450e4febf887635d78bf7cfd7e4f1d3c808b"
+      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.9.0/ai-usage-tui-v0.9.0-aarch64-macos.tar.gz"
+      sha256 "73f2bc15407df783d69d1b58aaa7c3a1c35dbff7750c66148157faf4211f5614"
     end
     on_intel do
-      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.8.0/ai-usage-tui-v0.8.0-x86_64-macos.tar.gz"
-      sha256 "2793ae1ec69b3c8281193ed2990b96d01c30d12271fdbad1cadec0c1b83b2072"
+      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.9.0/ai-usage-tui-v0.9.0-x86_64-macos.tar.gz"
+      sha256 "ec81fbb13d8e4e58f2d41c447b2a874bc9a66528717a50a181eb66f10b4fa1f3"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.8.0/ai-usage-tui-v0.8.0-x86_64-linux.tar.gz"
-      sha256 "625ff30e64c49b8465872d9083a32e2133b74e6923d9da473127408810091e6e"
+      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.9.0/ai-usage-tui-v0.9.0-x86_64-linux.tar.gz"
+      sha256 "ca8a9335ad40215862c0700181ed609d483aee1bf8489540cb908ef26eab6ee0"
     end
     # The aarch64-linux tarball has been built and published since v0.2.0; the formula simply
     # never offered it, so `brew install` on an ARM Linux box fell through to no bottle at all.
     on_arm do
-      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.8.0/ai-usage-tui-v0.8.0-aarch64-linux.tar.gz"
-      sha256 "bc482dd66cf577117db07761c5861f2d1716b18267decacc0d44cb5e43eaed6e"
+      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.9.0/ai-usage-tui-v0.9.0-aarch64-linux.tar.gz"
+      sha256 "3c62dfadc60c72c5156a0f51fe5edfa74f90bf1580f18931cfd0bfc932034066"
     end
   end
 
