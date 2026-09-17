@@ -4,30 +4,30 @@
 class AiUsageTui < Formula
   desc "Terminal dashboard that measures what each AI coding model actually costs per passing test — routing, escalation and budget analytics across Claude Code, Codex CLI, GitHub Copilot, Gemini CLI, OpenCode and Local models, where an unknown cost stays unknown instead of rendering as $0.00. Live TUI or JSON/CSV."
   homepage "https://sophanasok.github.io/ai-usage-tui-site/"
-  version "0.18.0"
+  version "0.19.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.18.0/ai-usage-tui-v0.18.0-aarch64-macos.tar.gz"
-      sha256 "10fcdffd3cc164d9f122c37eddfb736661a5cea959c9c1d5b91e116df9410105"
+      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.19.0/ai-usage-tui-v0.19.0-aarch64-macos.tar.gz"
+      sha256 "383e662b0eca10d10146be87128d59d4d865b61b7213eb2822ea09b463357073"
     end
     on_intel do
-      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.18.0/ai-usage-tui-v0.18.0-x86_64-macos.tar.gz"
-      sha256 "f11be2fc52d552be413b1ab4a41854af3e7a803651508466beb83af1c3779bdb"
+      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.19.0/ai-usage-tui-v0.19.0-x86_64-macos.tar.gz"
+      sha256 "0653177ce239053904002169b338653046a4df366f092b9113ed0d2b19db7702"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.18.0/ai-usage-tui-v0.18.0-x86_64-linux.tar.gz"
-      sha256 "7af1c458593caf5c5885916d0e33c5769a84662c58ab73bec967f66ff34a5ecb"
+      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.19.0/ai-usage-tui-v0.19.0-x86_64-linux.tar.gz"
+      sha256 "40de0a87a711dfb7324f08023c140c8efc7d2692538afca0c3efb42ed2d086ce"
     end
     # The aarch64-linux tarball has been built and published since v0.2.0; the formula simply
     # never offered it, so `brew install` on an ARM Linux box fell through to no bottle at all.
     on_arm do
-      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.18.0/ai-usage-tui-v0.18.0-aarch64-linux.tar.gz"
-      sha256 "ed3179c53dda65c70c831fb472e24117704c39bac5fc54dc2500138cbff83304"
+      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v0.19.0/ai-usage-tui-v0.19.0-aarch64-linux.tar.gz"
+      sha256 "f43d4d056b43737e669b61a7be96266905ae4b89aea8b0e3a2c117f87d1cbc70"
     end
   end
 
