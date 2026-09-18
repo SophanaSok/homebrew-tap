@@ -4,17 +4,17 @@
 class AiUsageTui < Formula
   desc "Terminal dashboard that measures what each AI coding model actually costs per passing test — routing, escalation and budget analytics across Claude Code, Codex CLI, GitHub Copilot, Gemini CLI, OpenCode and Local models, where an unknown cost stays unknown instead of rendering as $0.00. Live TUI or JSON/CSV."
   homepage "https://sophanasok.github.io/ai-usage-tui-site/"
-  version "1.0.1"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v1.0.1/ai-usage-tui-v1.0.1-aarch64-macos.tar.gz"
-      sha256 "24c96073c2f241ad635827066f499ce53e54257ff920f9faf6d7451cc1f51c84"
+      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v1.1.0/ai-usage-tui-v1.1.0-aarch64-macos.tar.gz"
+      sha256 "2c96638dd5bc7b401a9a0c11d7449d2cc8e6daeaa57dba07971642125b78f5a2"
     end
     on_intel do
-      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v1.0.1/ai-usage-tui-v1.0.1-x86_64-macos.tar.gz"
-      sha256 "183c8ee232628410e214b816857da349d40d7ad9449eacdd68dff3f4139008a9"
+      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v1.1.0/ai-usage-tui-v1.1.0-x86_64-macos.tar.gz"
+      sha256 "8f29c75180ed49cf3880af722471dc0d2f3b29e46ca960ff38fccf8e346ed331"
     end
   end
 
@@ -23,14 +23,14 @@ class AiUsageTui < Formula
   # Debian 12 do not have: the formula installed a binary that would not start.
   on_linux do
     on_intel do
-      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v1.0.1/ai-usage-tui-v1.0.1-x86_64-linux-musl.tar.gz"
-      sha256 "d7cbeced2df1d4ca170bd56d09eb4be1690b0673ca8fa9fd4eb6d4e41fdde221"
+      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v1.1.0/ai-usage-tui-v1.1.0-x86_64-linux-musl.tar.gz"
+      sha256 "3932160edf7752f50b6e2bd141b90fe9ea291bd14ed209b1fbc2a3a24e8cabb0"
     end
     # The aarch64-linux tarball has been built and published since v0.2.0; the formula simply
     # never offered it, so `brew install` on an ARM Linux box fell through to no bottle at all.
     on_arm do
-      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v1.0.1/ai-usage-tui-v1.0.1-aarch64-linux-musl.tar.gz"
-      sha256 "68e1eb9016a68e4c298f5129f81da87cb3a02c4ec3dceb5b21bd147c015b9ca6"
+      url "https://github.com/SophanaSok/ai-usage-tui/releases/download/v1.1.0/ai-usage-tui-v1.1.0-aarch64-linux-musl.tar.gz"
+      sha256 "3ba95c168cf73c7bbe6e10ce7a7f6b5493e5a4115a0e62492b00a3c46a561ce9"
     end
   end
 
